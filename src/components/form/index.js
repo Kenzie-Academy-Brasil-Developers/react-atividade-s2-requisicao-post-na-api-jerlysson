@@ -6,8 +6,14 @@ import axios from "axios";
 import { useHistory } from "react-router";
 
 const schema = yup.object().shape({
-  username: yup.string().required("campo obrigatorio").max(18),
-  password: yup.string().required("campo obrigatorio").min(4),
+  username: yup
+    .string()
+    .required("campo obrigatorio")
+    .max(18, "maximo 18 Caracteres"),
+  password: yup
+    .string()
+    .required("campo obrigatorio")
+    .min(4, "minimo 4 Caracteres"),
 });
 
 function Login({ setLoggedIn }) {
