@@ -1,0 +1,12 @@
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.App {
+  text-align: center;
+}
+body {
+  background: linear-gradient(45deg, #467adb, #8441f2);
+  height: 100vh;
+}
